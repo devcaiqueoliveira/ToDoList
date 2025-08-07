@@ -3,7 +3,7 @@ public class TaskManager {
     private TaskValidator taskValidator;
 
     public void createTask(String taskName, Task task) throws Exception {
-        taskValidator.validateNameTask(taskName);
+        taskValidator.validateCreateTask(taskName);
         taskCache.addTask(taskName, task);
     }
     public void deleteTask(String taskName) {
